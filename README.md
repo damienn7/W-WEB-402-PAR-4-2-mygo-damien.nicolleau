@@ -18,6 +18,7 @@
 
 ### Golang command-line
 - go mod tidy install the dependencies for you
+- go run cmd/main.go to run the server
 
 ### Migrate command-line
 - migrate create -ext sql -dir db/migrations add_users_table
