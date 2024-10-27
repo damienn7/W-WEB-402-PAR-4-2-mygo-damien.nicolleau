@@ -11,5 +11,15 @@
 - So run this command to go in the postgres container : docker exec -it postgres15 psql
 
 ### Postgres command-line
-- \l will list databases
-- exit will quit the postgres service
+- "\l" will list databases
+- "\c go-chat" will connect to go-chat database
+- "\d users" will describe the table
+- "exit" or "\q" will quit the postgres service
+
+### Golang command-line
+- go mod tidy install the dependencies for you
+
+### Migrate command-line
+- migrate create -ext sql -dir db/migrations add_users_table
+- migrate -path db/migrations -database "postgresql://root:password@localhost:5433/go-chat?sslmode=disable" -verbose up
+- migrate -path db/migrations -database "postgresql://root:password@localhost:5433/go-chat?sslmode=disable" -verbose force 20241027155056
