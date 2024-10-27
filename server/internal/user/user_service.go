@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	secretKey = "secret"
+	secretKey = "98AcFUajA3W1DkiMnMXIGbgT5BPI7rG4"
 )
 
 type service struct {
